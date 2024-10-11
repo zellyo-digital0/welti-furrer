@@ -1,0 +1,663 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welti-Furrer</title>
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <link href="./css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+
+    <!-- header start here  -->
+    <nav class="bg-[#ffcc00] border-gray-200  sticky w-full z-20 top-0 start-0 ">
+      <div class=" px-5 py-5 2xl:px-10 flex flex-wrap items-center justify-between">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="img/logo.png" class="3xl:w-[150px] w-[120px]" alt="Logo" />
+
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#363636] rounded-lg md:hidden"
+          aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <div class="hidden text-xs lg:flex items-center gap-x-1 justify-end mb-2">
+            <a href="#" class="text-[#942642] hover:text-[#942642]">
+              DE
+            </a>
+            <span class="text-[10px]">|</span>
+            <a href="/" class="text-[#676767] hover:text-[#942642]">
+              EN
+            </a>
+          </div>
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Umzug
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar"
+                class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Zusatzleistungen
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar2"
+                class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar3"
+                class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Ratgeber<svg
+                  class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar3"
+                class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4"
+                class="flex items-center justify-between w-full py-2 px-3 text-[#363636] hover:text-[#363636] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:w-auto">Über
+                uns <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar4"
+                class="z-10 hidden font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-[#942642]" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zürich</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Winterthur</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Baden</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Bern</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Basel</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Zug</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-1 hover:bg-gray-100">Luzern</a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero section start here  -->
+    <section class="bg-no-repeat bg-cover bg-center hero">
+      <div
+        class="container 4xl:max-w-[1536px] 3xl:max-w-[1280px] 2xl:max-w-[1160px] px-5 py-5 2xl:px-10 4xl:px-0 min-h-[91vh] flex items-center">
+        <div class="bg-[#F7F7F7] p-8 rounded-md lg:rounded-2xl max-w-[446px]">
+          <h1 class="text-[#942642] text-2xl lg:text-4xl font-bold">
+            Morbi tristique sene
+            et netus et malesuada.
+          </h1>
+          <p class="text-[#676767] pt-2 pb-6 font-helveticaNeue font-medium ">
+            Sagittis orci a scelerisque purus semper eget duis. Facilisi morbi tempus iaculis urna id volpat
+            lacus laoreet. Amet
+            consectetur adipiscing elit duis tristique.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <!-- single item  -->
+            <div class="hero-single-item flex items-center p-3 gap-x-3">
+              <span class="w-10">
+                <img src="img/i1.png" class="w-full" alt="Item">
+              </span>
+              <div class="flex-1 flex justify-between items-end gap-x-1">
+                <span class="text-[#942642] font-semibold flex-1">Umzug <span class="font-helveticaNeue">&</span>
+                  Reinigung</span>
+                <span class="w-[6px]">
+                  <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                </span>
+              </div>
+            </div>
+            <!-- single item  -->
+            <div class="hero-single-item flex items-center p-3 gap-x-3">
+              <span class="w-10">
+                <img src="img/i2.png" class="w-full" alt="Item">
+              </span>
+              <div class="flex-1 flex justify-between items-end gap-x-1">
+                <span class="text-[#942642] font-semibold w-full lg:w-5">Nur
+                  Umzug</span>
+                <span class="w-[6px]">
+                  <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                </span>
+              </div>
+            </div>
+            <!-- single item  -->
+            <div class="hero-single-item flex items-center p-3 gap-x-3">
+              <span class="w-10">
+                <img src="img/i3.png" class="w-full" alt="Item">
+              </span>
+              <div class="flex-1 flex justify-between items-end gap-x-1">
+                <span class="text-[#942642] font-semibold flex-1">Nur
+                  Reinigung</span>
+                <span class="w-[6px]">
+                  <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                </span>
+              </div>
+            </div>
+            <!-- single item  -->
+            <div class="hero-single-item flex items-center p-3 gap-x-3">
+              <span class="w-8">
+                <img src="img/i4.png" class="w-full" alt="Item">
+              </span>
+              <div class="flex-1 flex justify-between items-end gap-x-1">
+                <span class="text-[#942642] font-semibold flex-1">Umzugskisten</span>
+                <span class="w-[6px]">
+                  <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                </span>
+              </div>
+            </div>
+            <!-- single item  -->
+            <div class="hero-single-item flex items-center p-3 gap-x-3">
+              <span class="w-8">
+                <img src="img/i5.png" class="w-full" alt="Item">
+              </span>
+              <div class="flex-1 flex justify-between items-end gap-x-1">
+                <span class="text-[#942642] font-semibold flex-1">Büroumzug</span>
+                <span class="w-[6px]">
+                  <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                </span>
+              </div>
+            </div>
+            <!-- single item  -->
+            <div class="hero-single-item flex items-center p-3 gap-x-3">
+              <span class="w-8">
+                <img src="img/i6.png" class="w-full" alt="Item">
+              </span>
+              <div class="flex-1 flex justify-between items-end gap-x-1">
+                <span class="text-[#942642] font-semibold flex-1">Klavier<span
+                    class="font-helveticaNeue">-</span>transport</span>
+                <span class="w-[6px]">
+                  <img src="img/arrow.png" class="w-full mb-[6px]" alt="Arrow">
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- moving start -->
+    <section class="md:py-16 py-8 bg-[#F7F7F7]" id="moving">
+      <div
+        class="container 4xl:max-w-[1160px] 3xl:max-w-[1080px] 2xl:max-w-[980px] xl:max-w-[800px] px-5 py-5 2xl:px-0">
+        <!-- title -->
+        <h2 class="text-2xl font-bold text-[#942642] md:text-3xl md:text-start text-center mx-auto font-helveticaNeue">
+          Moving in 3 steps.
+        </h2>
+        <!-- content -->
+        <div class="flex flex-col justify-between pt-10 space-y-6 md:flex-row space-x-0 md:space-x-8 md:space-y-0">
+          <!-- items-1 -->
+          <div class="p-4 rounded-md shadow-md bg-white transition duration-200 hover:shadow-lg">
+            <span class="text-sm text-[#363636] font-black">First Step</span>
+            <h3 class="text-xl text-[#942642] font-bold pt-2 pb-4">
+              Anfrage ausfüllen
+            </h3>
+            <p class="text-base text-[#676767] italic">
+              Sagittis orci a scelerisque purus semper eget duis. Facilisi morbi
+              tempus iaculis urna id volutpat lacus laoreet. Amet consectet
+              adipis elit.
+            </p>
+          </div>
+          <!-- items-2 -->
+          <div class="p-4 rounded-md shadow-md bg-white transition duration-200 hover:shadow-lg">
+            <span class="text-sm text-[#363636] font-black">Second Step</span>
+            <h3 class="text-xl text-[#942642] font-bold pt-2 pb-4">
+              Offerte prüfen
+            </h3>
+            <p class="text-base text-[#676767] italic">
+              Sagittis orci a scelerisque purus semper eget duis. Facilisi morbi
+              tempus iaculis urna id volutpat lacus laoreet. Amet consectet
+              adipis elit.
+            </p>
+          </div>
+          <!-- items-3 -->
+          <div class="p-4 rounded-md shadow-md bg-white transition duration-200 hover:shadow-lg">
+            <span class="text-sm text-[#363636] font-black">Third Step</span>
+            <h3 class="text-xl text-[#942642] font-bold pt-2 pb-4">Buchen​</h3>
+            <p class="text-base text-[#676767] italic">
+              Sagittis orci a scelerisque purus semper eget duis. Facilisi morbi
+              tempus iaculis urna id volutpat lacus laoreet. Amet consectet
+              adipis elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- moving end -->
+
+    <!-- values start -->
+    <section class="md:py-16 py-8 bg-white" id="values">
+      <div class="md:container-none container px-5 py-5 2xl:px-0">
+        <!-- values-wrapper -->
+        <div class="flex flex-col justify-between md:flex-row md:items-center md:space-x-32">
+          <!-- content -->
+          <div class="3xl:ml-0 2xl:pl-[11%] 2xl:ml-5 xl:pl-[20px] lg:pl-[8%] md:pl-[20px] pl-0">
+            <!-- title -->
+            <h2
+              class="text-2xl font-bold text-[#942642] md:text-3xl md:text-start text-center mx-auto font-helveticaNeue">
+              Our values.
+            </h2>
+            <div class="md:max-w-[480px] mx-auto py-6">
+              <!-- mobile -->
+              <div class="md:hidden block pb-3">
+                <img src="./img/values.png" alt="values" class="w-full" />
+              </div>
+              <p class="text-[#676767] leading-6">
+                Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Vel
+                quam elementum pulvinar etiam non quam lacus. A condimentum
+                vitae sapien pellentesque habitant morbi tristique senectus et.
+                Pulvinar etiam non quam lacus.
+              </p>
+            </div>
+            <div class="w-full">
+              <a href="#"
+                class="bg-[#FFCC00] text-[#942642] w-full inline-block text-center font-black py-3 px-14 rounded-full shadow-md transition duration-200 hover:bg-[#942642] hover:text-[#FFCC00] lg:max-w-[190px]">Über
+                uns</a>
+            </div>
+          </div>
+          <!-- img -->
+          <div class="md:w-1/2 md:block hidden">
+            <img src="./img/values.png" alt="values" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- values end -->
+
+    <!-- review start -->
+    <section class="md:py-16 py-8 bg-[#FCFCFC]" id="review">
+      <div class="container 4xl:max-w-[1536px] 3xl:max-w-[1280px] 2xl:max-w-[1160px] px-5 py-5 2xl:px-10 4xl:px-0">
+        <!-- title -->
+        <h2
+          class="text-2xl font-bold text-[#942642] mb-7 md:text-3xl md:text-start text-center mx-auto font-helveticaNeue">
+          People love us.
+        </h2>
+        <!-- review-1 -->
+        <div class="flex flex-col space-y-8 justify-between md:flex-row md:space-x-12 md:space-y-0">
+          <!-- items-1 -->
+          <div class="bg-white p-8 shadow-md rounded-lg flex justify-between space-x-4 hover:shadow-lg">
+            <!-- img -->
+            <img src="./img/avater.png" alt="avater" class="man-w-12 max-h-12" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <p class="text-[#676767] italic">
+                Mauris nunc congue nisi vitae suscipit tellus mauris a diam.
+                Nullam non nisi est sit amet facilisis magna etiam. Ac orci
+                phasellus egestas tellus rutrum tellus pellentesque eu.
+              </p>
+              <h4 class="text-lg text-[#942642] font-bold pt-4">Jane Doe</h4>
+              <span class="text-sm text-[#363636] font-medium">Product Designer, Zurich</span>
+            </div>
+          </div>
+          <!-- items-2 -->
+          <div class="bg-white p-8 shadow-md rounded-lg flex justify-between space-x-4 hover:shadow-lg">
+            <!-- img -->
+            <img src="./img/avater.png" alt="avater" class="man-w-12 max-h-12" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <p class="text-[#676767] italic">
+                Mauris nunc congue nisi vitae suscipit tellus mauris a diam.
+                Nullam non nisi est sit amet facilisis magna etiam. Ac orci
+                phasellus egestas tellus rutrum tellus pellentesque eu.
+              </p>
+              <h4 class="text-lg text-[#942642] font-bold pt-4">Jane Doe</h4>
+              <span class="text-sm text-[#363636] font-medium">Product Designer, Basel</span>
+            </div>
+          </div>
+        </div>
+        <!-- review-2 -->
+        <div class="flex flex-col space-y-8 mt-8 justify-between md:flex-row md:space-x-12 md:space-y-0 md:mt-12">
+          <!-- items-1 -->
+          <div class="bg-white p-8 shadow-md rounded-lg flex justify-between space-x-4 hover:shadow-lg">
+            <!-- img -->
+            <img src="./img/avater.png" alt="avater" class="man-w-12 max-h-12" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <p class="text-[#676767] italic">
+                Mauris nunc congue nisi vitae suscipit tellus mauris a diam.
+                Nullam non nisi est sit amet facilisis magna etiam. Ac orci
+                phasellus egestas tellus rutrum tellus pellentesque eu.
+              </p>
+              <h4 class="text-lg text-[#942642] font-bold pt-4">Jane Doe</h4>
+              <span class="text-sm text-[#363636] font-medium">Product Designer, Bern</span>
+            </div>
+          </div>
+          <!-- items-2 -->
+          <div class="bg-white p-8 shadow-md rounded-lg flex justify-between space-x-4 hover:shadow-lg">
+            <!-- img -->
+            <img src="./img/avater.png" alt="avater" class="man-w-12 max-h-12" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <p class="text-[#676767] italic">
+                Mauris nunc congue nisi vitae suscipit tellus mauris a diam.
+                Nullam non nisi est sit amet facilisis magna etiam. Ac orci
+                phasellus egestas tellus rutrum tellus pellentesque eu.
+              </p>
+              <h4 class="text-lg text-[#942642] font-bold pt-4">Jane Doe</h4>
+              <span class="text-sm text-[#363636] font-medium">Product Designer, Lucerne</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review end -->
+
+    <!-- boxes start -->
+    <section class="md:py-16 py-8 bg-white" id="boxes">
+      <div class="md:container-none container px-5 py-5 2xl:px-0">
+        <!-- boxes-wrapper -->
+        <div class="flex flex-col md:justify-normal md:flex-row md:items-center md:space-x-32">
+          <!-- img -->
+          <div class="md:w-1/2 md:block hidden">
+            <img src="./img/boxes.png" alt="values" class="w-full" />
+          </div>
+          <!-- content -->
+          <div class="3xl:mr-0 2xl:pr-[11%] 2xl:mr-5 xl:pr-[20px] lg:pr-[8%] md:pr-[20px] pr-0">
+            <!-- title -->
+            <h2
+              class="text-2xl font-bold text-[#942642] md:text-3xl md:text-start text-center mx-auto font-helveticaNeue">
+              Do you need boxes?
+            </h2>
+            <div class="md:max-w-[480px] mx-auto py-6">
+              <!-- mobile -->
+              <div class="md:hidden block pb-3">
+                <img src="./img/boxes.png" alt="values" class="w-full" />
+              </div>
+              <p class="text-[#676767] leading-6">
+                Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Vel
+                quam elementum pulvinar etiam non quam lacus. A condimentum
+                vitae sapien pellentesque habitant morbi tristique senectus et.
+                Pulvinar etiam non quam lacus.
+              </p>
+            </div>
+            <div class="w-full">
+              <a href="#"
+                class="bg-[#FFCC00] text-[#942642] font-black w-full text-center inline-block py-3 px-14 rounded-full shadow-md transition duration-200 lg:w-[255px] hover:bg-[#942642] hover:text-[#FFCC00]">
+                Order at our store
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- boxes end -->
+
+    <!-- map start here  -->
+    <footer class="">
+      <div class="container 4xl:max-w-[1536px] 3xl:max-w-[1280px] 2xl:max-w-[1160px] px-5 py-5 2xl:px-10 4xl:px-0">
+        <h2 class="text-[#942642] text-2xl lg:text-3xl font-semibold font-helveticaNeue">Find us.</h2>
+        <p class="text-[#676767] pt-3 max-w-[450px]">Eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+          Dignissim cras tincidunt lobortis feugiat. Ipsum dolor
+          sit amet consectetur adipiscing elit.</p>
+      </div>
+      <div id="map"></div>
+
+    </footer>
+
+
+    <!-- bot on left bottom  -->
+    <div class="fixed bottom-3 right-3">
+      <img src="img/bot.png" alt="Bot">
+    </div>
+
+    <!-- bottom bar  -->
+    <div
+      class="w-[50%] md:w-[80%] lg:w-[910px] xl:w-[1180px] 2xl:w-[1280px] flex-col md:flex-row mx-auto bottom-bar bg-white shadow-lg md:min-h-16 flex items-center justify-between rounded-[50px] p-0 md:p-2 cursor-pointer hover:bg-[#942642]">
+      <div class="w-12 h-12 rounded-[50%] bg-[#942642] hidden md:flex  items-center justify-center" id="ques">
+        <div
+          class="border-2 border-[#ffcc00] p-1 text-[#ffcc00] rounded-[50%] flex items-center justify-center w-7 h-7 font-semibold"
+          id="innerQues">?</div>
+      </div>
+      <h3 class="hidden md:flex text-sm lg:text-xl font-semibold text-[#942642]">Morbi tristique senectus et netus et
+        malesuada?</h3>
+      <button
+        class="bg-[#942642] text-[#ffcc00] rounded-[50px] flex items-center justify-center w-full md:w-60 h-12">Ask
+        for a
+        quote</button>
+    </div>
+
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  <script>
+    // Initialize the map
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: { lat: 46.8182, lng: 8.2275 },
+        styles: [
+          {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#444444" }]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{ "color": "#f2f2f2" }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [{ "saturation": -100 }, { "lightness": 45 }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [{ "visibility": "simplified" }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.icon",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }]
+          }
+        ]
+      });
+
+      // Define marker data
+      var locations = [
+        { name: "Zürich", lat: 47.3769, lng: 8.5417 },
+        { name: "Winterthur", lat: 47.499, lng: 8.7241 },
+        { name: "Baden", lat: 47.473, lng: 8.3059 },
+        { name: "Bern", lat: 46.948, lng: 7.4474 },
+        { name: "Basel", lat: 47.5596, lng: 7.5886 },
+        { name: "Zug", lat: 47.1724, lng: 8.5174 },
+        { name: "Luzern", lat: 47.0502, lng: 8.3093 }
+      ];
+
+      // Add markers to the map
+      var markers = [];
+      locations.forEach(function (location) {
+        var marker = new google.maps.Marker({
+          position: { lat: location.lat, lng: location.lng },
+          map: map,
+          title: location.name
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: location.name
+        });
+
+        marker.addListener('click', function () {
+          infowindow.open(map, marker);
+        });
+
+        markers.push(marker);
+      });
+
+      // Create a custom control to display locations
+      var infoDiv = document.createElement('div');
+      infoDiv.classList.add('info');
+      infoDiv.innerHTML = '<ul>' +
+        locations.map(function (location, index) {
+          return `<li class='flex items-center gap-x-1' onclick="goToLocation(${index})"><span><img src="img/mark.png" alt="mark"></span>${location.name}</li>`;
+
+        }).join('') +
+        '</ul>';
+      map.controls[google.maps.ControlPosition.TOP_RIGHT].push(infoDiv);
+
+      // Function to go to location when list item is clicked
+      window.goToLocation = function (index) {
+        var location = locations[index];
+        map.setCenter({ lat: location.lat, lng: location.lng });
+        map.setZoom(10);
+        google.maps.event.trigger(markers[index], 'click');
+      };
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBooCU6IjjMVFjbYRCC87fzvY6znqStHX8&callback=initMap"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const bottomBar = document.querySelector('.bottom-bar');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 80) {
+          bottomBar.classList.add('visible');
+        } else {
+          bottomBar.classList.remove('visible');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

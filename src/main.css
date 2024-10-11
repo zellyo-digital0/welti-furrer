@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html tag style  */
+@layer base {
+  body {
+    @apply font-proximaNova;
+  }
+
+  /* h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  } */
+}
+
+/* layer style to add multiple class */
+@layer components {
+  /* .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  } */
+}
+
+/* custom style */
+@layer utilities {
+  .hero {
+    background-image: url(../img/hero.png);
+  }
+  .hero-single-item {
+    border-radius: 4px;
+    background: var(--rgb-255255255, #fff);
+    box-shadow: 0px 4px 4px 0px rgba(54, 54, 54, 0.08);
+    cursor: pointer;
+  }
+
+  .hero-single-item:hover {
+    box-shadow: 0px 4px 4px 0px rgba(192, 192, 192, 0.08);
+  }
+
+  #map {
+    height: 500px;
+    margin-top: 20px;
+  }
+
+  .info {
+    background: white;
+    padding: 12px;
+    width: 140px;
+    border-radius: 4px;
+    background: var(--rgb-255255255, #fff);
+    box-shadow: 0px 4px 4px 0px rgba(54, 54, 54, 0.08);
+    left: 10%;
+    top: 60px !important;
+  }
+
+  .info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .info li {
+    cursor: pointer;
+    color: #942642;
+    padding: 4px 0;
+  }
+  .bottom-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%);
+    transition: 0.3s all ease-in-out;
+  }
+
+  .bottom-bar:hover h3 {
+    color: white;
+  }
+
+  .bottom-bar:hover button,
+  .bottom-bar:hover #ques {
+    color: #942642;
+    background: #ffcc00;
+  }
+  .bottom-bar:hover #innerQues {
+    border-color: #942642;
+    color: #942642;
+  }
+  .bottom-bar.visible {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
